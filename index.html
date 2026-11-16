@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#102b25"><meta name="description" content="THEE onset Enterprise — personal and business financial command centre.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+<title>THEE onset Enterprise</title>
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar"><div class="brand"><div class="brand-mark">T</div><div><b>THEE onset</b><small>ENTERPRISE</small></div></div><div class="workspace"><span>WORKSPACE</span><b>Personal & Business</b></div><nav id="sideNav"></nav><div class="side-foot"><span class="sync-dot"></span><span id="syncLabel">Saved on this device</span></div></aside>
+<main class="main"><header class="topbar"><button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button><div><small id="dateLabel"></small><h1 id="pageTitle">Overview</h1></div><div class="top-actions"><button class="icon-btn" id="exportBtn" title="Export backup">↥</button><div class="avatar">TO</div></div></header>
+<div class="content" id="view"></div>
+</main>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modal-wrap" id="modalWrap" hidden><section class="modal"><div class="modal-head"><div><small id="modalEyebrow">NEW RECORD</small><h2 id="modalTitle">Add transaction</h2></div><button class="icon-btn" id="closeModal">×</button></div><form id="recordForm"><div id="formFields" class="form-grid"></div><div class="modal-actions"><button type="button" class="btn secondary" id="cancelModal">Cancel</button><button class="btn primary" type="submit">Save record</button></div></form></section></div>
+<input type="file" id="importFile" accept="application/json" hidden>
+<script src="app.js"></script>
+</body></html>
